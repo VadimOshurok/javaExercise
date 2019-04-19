@@ -7,10 +7,10 @@ class  Flower{
    static double total;
 
    double GetPrice(){
-   return price;
+	   return price;
    }
 
    double GetTotal(){
-   return total;
+	   return total;
    }
 }
