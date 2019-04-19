@@ -1,6 +1,8 @@
+package Exercise2;
+
 import java.util.Random;
 
-public class program2 {
+public class Program2 {
 	static Random rnd=new Random();
 	static int a=getRandom();
 	static int b=getRandom();
@@ -86,7 +88,6 @@ public class program2 {
 		int c=(a/10)%10;
 		int d=(a/100)%10;
 		int sum=b+c+d;
-		System.out.println("4)В числе " +a+ " cумма всех цифр: "+sum);
+		System.out.println("4)  В числе " +a+ " cумма всех цифр: "+sum);
 	}
 }
-	
