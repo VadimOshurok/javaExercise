@@ -1,6 +1,8 @@
+package Exercise1;
+
 import java.util.Arrays;
 
-public class program {
+public class Program {
 	static String text = "\nКак тебя сделать?! вау получилось)";
 	static String[] line = {"14", "12", "11","19"};
 	
@@ -49,7 +51,3 @@ public class program {
 		System.out.print(output);
 	}
 }
-
-
-
-
