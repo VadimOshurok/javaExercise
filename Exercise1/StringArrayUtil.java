@@ -59,6 +59,4 @@ public class StringArrayUtil {
 		System.out.println(strBuilder.toString());
 		return result;
 	}
-
-
 }
