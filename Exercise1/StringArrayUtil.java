@@ -23,10 +23,10 @@ public class StringArrayUtil {
 		StringBuilder strBuilder = new StringBuilder(result);
 		
 		for(int i = 0; i <  line.length; i++) {
-			strBuilder.append(" ");
 			strBuilder.append(line[i]);	
+			strBuilder.append(" ");
 		}
-		System.out.println(strBuilder.toString());
+		result += strBuilder;
 		return result;
 	}
 	
@@ -41,8 +41,8 @@ public class StringArrayUtil {
 				strBuilder.append(" ");
 			}
 		}
-		System.out.println(strBuilder.toString());
-		return result;
+		result += strBuilder;
+		return result ;
 	}
 	
 	public String upperWords(String[] words) {
@@ -56,9 +56,7 @@ public class StringArrayUtil {
 			strBuilder.append(all);
 			strBuilder.append(" ");
 		}
-		System.out.println(strBuilder.toString());
+		result += strBuilder;
 		return result;
 	}
-
-
 }
