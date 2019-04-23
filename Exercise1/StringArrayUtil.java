@@ -13,7 +13,7 @@ public class StringArrayUtil {
 			i1 = Integer.parseInt(line[i]);
 			sum += i1;
 		}	   
-		result += sum;
+		result = String.valueOf(sum);
 		return result;
 	}
 	
@@ -26,7 +26,7 @@ public class StringArrayUtil {
 			strBuilder.append(line[i]);	
 			strBuilder.append(" ");
 		}
-		result += strBuilder;
+		result = String.valueOf(strBuilder);
 		return result;
 	}
 	
@@ -41,7 +41,7 @@ public class StringArrayUtil {
 				strBuilder.append(" ");
 			}
 		}
-		result += strBuilder;
+		result = String.valueOf(strBuilder);
 		return result ;
 	}
 	
@@ -56,7 +56,8 @@ public class StringArrayUtil {
 			strBuilder.append(all);
 			strBuilder.append(" ");
 		}
-		result += strBuilder;
+		result = String.valueOf(strBuilder);
 		return result;
 	}
 }
+
