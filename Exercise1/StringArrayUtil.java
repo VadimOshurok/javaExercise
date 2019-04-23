@@ -5,34 +5,30 @@ import java.util.Arrays;
 public class StringArrayUtil {
 	
 	public static String numMassive(String[] line) {
-		String result = "";
 		int i1=0;
 		int sum=0;
-		
+		String result ="";
 		for (int i = 0; i < line.length; i++) {
 			i1 = Integer.parseInt(line[i]);
 			sum += i1;
-		}	   
+		}	
 		result = String.valueOf(sum);
 		return result;
 	}
 	
 	public static String sort(String[] line) {
-		String result="";
 		Arrays.sort(line);
-		StringBuilder strBuilder = new StringBuilder(result);
+		StringBuilder strBuilder = new StringBuilder("");
 		
 		for(int i = 0; i <  line.length; i++) {
 			strBuilder.append(line[i]);	
 			strBuilder.append(" ");
 		}
-		result = String.valueOf(strBuilder);
-		return result;
+		return strBuilder.toString();
 	}
 	
 	public static String textMassive(String text) {
-		String result = "";
-		StringBuilder strBuilder = new StringBuilder(result);
+		StringBuilder strBuilder = new StringBuilder("");
 		
 		for (String retval : text.split(" ")) {
 			String[] words = {retval};
@@ -41,13 +37,11 @@ public class StringArrayUtil {
 				strBuilder.append(" ");
 			}
 		}
-		result = String.valueOf(strBuilder);
-		return result ;
+		return strBuilder.toString();
 	}
 	
 	public String upperWords(String[] words) {
-		String result="";
-		StringBuilder strBuilder = new StringBuilder(result);
+		StringBuilder strBuilder = new StringBuilder("");
 		
 		for(String word:words){
 			String first = word.substring(0,1).toUpperCase();
@@ -56,8 +50,6 @@ public class StringArrayUtil {
 			strBuilder.append(all);
 			strBuilder.append(" ");
 		}
-		result = String.valueOf(strBuilder);
-		return result;
+		return strBuilder.toString();
 	}
 }
-
