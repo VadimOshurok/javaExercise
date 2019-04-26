@@ -9,8 +9,4 @@ public class SetNumber {
 		int random=(int)RND.nextInt(899)+100;
 		return random;
 		}
-	
-	public final static int A=getRandom();
-	public final static int B=getRandom();
-	public final static int C=getRandom();
 }
