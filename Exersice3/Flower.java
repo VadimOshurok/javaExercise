@@ -1,4 +1,4 @@
-package Exersice3;
+package Exersise3;
 
 class  Flower{
    double price; 
